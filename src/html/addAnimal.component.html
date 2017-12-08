@@ -1,0 +1,12 @@
+<div class="add-animal">
+  <input type="text" #species placeholder="Species">
+  <input type="text" #name placeholder="Animal Name">
+  <input type="text" #age placeholder="Animal Age">
+  <input type="text" #diet placeholder="Diet">
+  <input type="text" #location placeholder="Location">
+  <input type="text" #caretakers placeholder="Number of Caretakers">
+  <input type="text" #sex placeholder="Sex">
+  <input type="text" #likes placeholder="Likes">
+  <input type="text" #dislikes placeholder="Dislikes">
+  <button type="button" name="button" (click)="addButtonClicked(species.value, name.value, age.value, diet.value, location.value, caretakers.value, sex.value, likes.value, dislikes.value)">Add</button>
+</div>
