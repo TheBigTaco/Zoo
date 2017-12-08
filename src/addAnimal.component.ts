@@ -9,7 +9,7 @@ import { Animal } from './animal.model';
 export class AddAnimalComponent {
   @Output() addAnimalSender = new EventEmitter();
 
-  addButtonClicked(species, name, age, diet, location, caretakers, sex, likes, dislikes) {
+  addButtonClicked(species: string, name: string, age: number, diet: string, location: string, caretakers:number, sex: string, likes: string, dislikes: string) {
     let animal = new Animal(species, name, age, diet, location, caretakers, sex, likes, dislikes);
     this.addAnimalSender.emit(animal);
   }

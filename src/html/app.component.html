@@ -1,5 +1,6 @@
 <div class="container">
-  <h1>The Awesome Amazing Fantastic Super Awesome Zoo!</h1>
-  <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+  <h1>THE SUPER AWESOME AMAZING FANTASTIC ZOO!!</h1>
+  <animal-list [childAnimalList]="masterAnimalList" (animalEditSender)="editAnimal($event)"></animal-list>
   <add-animal (addAnimalSender)="addAnimal($event)"></add-animal>
+  <edit-animal [childSelectedAnimal]="selectedAnimal" (doneSender)="done()"></edit-animal>
 </div>

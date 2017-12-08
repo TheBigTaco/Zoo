@@ -8,4 +8,9 @@ import { Animal } from './animal.model';
 
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
+  @Output() animalEditSender = new EventEmitter();
+
+  editButtonClicked(animal: Animal) {
+    this.animalEditSender.emit(animal);
+  }
 }

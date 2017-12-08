@@ -1,0 +1,7 @@
+<div class="edit-animal" *ngIf="childSelectedAnimal">
+  <input type="text" #newName placeholder="Edit Name">
+  <input type="text" #newAge placeholder="Edit Age">
+  <input type="number" #newCaretakers placeholder="Edit Caretakers">
+  <button type="button" name="button" (click)="childEditAnimal(newName.value, newAge.value, newCaretakers.value)">Submit</button>
+  <button type="button" name="button" (click)="doneButtonClicked()">Done</button>
+</div>
