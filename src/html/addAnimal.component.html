@@ -1,12 +1,22 @@
 <div class="add-animal">
+  <h1>Add Animal</h1>
+  <label>Species</label>
   <input type="text" #species placeholder="Species">
+  <label>Name</label>
   <input type="text" #name placeholder="Animal Name">
+  <label>Age</label>
   <input type="number" #age placeholder="Animal Age">
-  <input type="text" #diet placeholder="Diet">
-  <input type="text" #location placeholder="Location">
+  <label>Diet</label>
+  <input type="text" #diet placeholder="e.g. Herbivore, Omnivore">
+  <label>Location</label>
+  <input type="text" #location placeholder="Zoo Enclosure">
+  <label>Caretakers</label>
   <input type="number" #caretakers placeholder="Number of Caretakers">
-  <input type="text" #sex placeholder="Sex">
+  <label>Sex</label>
+  <input type="text" #sex placeholder="Male or Female">
+  <label>Likes</label>
   <input type="text" #likes placeholder="Likes">
+  <label>Dislikes</label>
   <input type="text" #dislikes placeholder="Dislikes">
-  <button type="button" name="button" (click)="addButtonClicked(species.value, name.value, age.value, diet.value, location.value, caretakers.value, sex.value, likes.value, dislikes.value)">Add</button>
+  <button type="button" name="button" (click)="addButtonClicked(species.value, name.value, age.value, diet.value, location.value, caretakers.value, sex.value, likes.value, dislikes.value); species.value=''; name.value='';age.value='';diet.value='';location.value='';caretakers.value='';sex.value='';likes.value='';dislikes.value='';">Add</button>
 </div>

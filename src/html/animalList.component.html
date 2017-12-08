@@ -1,6 +1,6 @@
 <div class="animal-list">
-  <div class="animal" *ngFor="let animal of childAnimalList">
-    <div *ngIf="search === 'all'">
+  <div *ngFor="let animal of childAnimalList">
+    <div class="animal" *ngIf="search === 'all'">
       <h3>{{animal.name}}</h3> <button type="button" name="button" (click)="editButtonClicked(animal)">Edit</button>
       <div class="details">
         <p>Name: {{animal.species}}</p>
@@ -14,8 +14,8 @@
       </div>
     </div>
   </div>
-  <div class="animal" *ngFor="let animal of childAnimalList | oldFilter">
-    <div *ngIf="search === 'old'">
+  <div *ngFor="let animal of childAnimalList | oldFilter">
+    <div class="animal" *ngIf="search === 'old'">
       <h3>{{animal.name}}</h3> <button type="button" name="button" (click)="editButtonClicked(animal)">Edit</button>
       <div class="details">
         <p>Name: {{animal.species}}</p>
@@ -29,8 +29,8 @@
       </div>
     </div>
   </div>
-  <div class="animal" *ngFor="let animal of childAnimalList | youngFilter">
-    <div *ngIf="search === 'young'">
+  <div *ngFor="let animal of childAnimalList | youngFilter">
+    <div class="animal" *ngIf="search === 'young'">
       <h3>{{animal.name}}</h3> <button type="button" name="button" (click)="editButtonClicked(animal)">Edit</button>
       <div class="details">
         <p>Name: {{animal.species}}</p>
