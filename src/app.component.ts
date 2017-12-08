@@ -4,9 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-root',
   template: `
   <div class="container">
-    <div class="jumbotron">
-      <h1>_rename</h1>
-    </div>
+    <h1>_rename</h1>
   </div>
   `
 })
