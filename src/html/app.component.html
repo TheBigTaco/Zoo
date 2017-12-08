@@ -1,6 +1,12 @@
 <div class="container">
   <h1>THE SUPER AWESOME AMAZING FANTASTIC ZOO!!</h1>
-  <animal-list [childAnimalList]="masterAnimalList" (animalEditSender)="editAnimal($event)"></animal-list>
+  <p>Filter:</p>
+  <select class="filter" [value]="filter" (input)="filter = $event.target.value">
+    <option value="all">Show All</option>
+    <option value="young">Show Animals Under 2 Years Old</option>
+    <option value="old">Show Animals Over 2 Years Old</option>
+  </select>
+  <animal-list [childAnimalList]="masterAnimalList" [search]="filter" (animalEditSender)="editAnimal($event)"></animal-list>
   <add-animal (addAnimalSender)="addAnimal($event)"></add-animal>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneSender)="done()"></edit-animal>
 </div>

@@ -1,15 +1,47 @@
 <div class="animal-list">
   <div class="animal" *ngFor="let animal of childAnimalList">
-    <h3>{{animal.name}}</h3> <button type="button" name="button" (click)="editButtonClicked(animal)">Edit</button>
-    <div class="details">
-      <p>Name: {{animal.species}}</p>
-      <p>Age: {{animal.age}}</p>
-      <p>Diet: {{animal.diet}}</p>
-      <p>Location: {{animal.location}}</p>
-      <p>Number of Caretakers: {{animal.caretakers}}</p>
-      <p>Sex: {{animal.sex}}</p>
-      <p>Likes: {{animal.likes}}</p>
-      <p>Dislikes: {{animal.dislikes}}</p>
+    <div *ngIf="search === 'all'">
+      <h3>{{animal.name}}</h3> <button type="button" name="button" (click)="editButtonClicked(animal)">Edit</button>
+      <div class="details">
+        <p>Name: {{animal.species}}</p>
+        <p>Age: {{animal.age}}</p>
+        <p>Diet: {{animal.diet}}</p>
+        <p>Location: {{animal.location}}</p>
+        <p>Number of Caretakers: {{animal.caretakers}}</p>
+        <p>Sex: {{animal.sex}}</p>
+        <p>Likes: {{animal.likes}}</p>
+        <p>Dislikes: {{animal.dislikes}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="animal" *ngFor="let animal of childAnimalList | oldFilter">
+    <div *ngIf="search === 'old'">
+      <h3>{{animal.name}}</h3> <button type="button" name="button" (click)="editButtonClicked(animal)">Edit</button>
+      <div class="details">
+        <p>Name: {{animal.species}}</p>
+        <p>Age: {{animal.age}}</p>
+        <p>Diet: {{animal.diet}}</p>
+        <p>Location: {{animal.location}}</p>
+        <p>Number of Caretakers: {{animal.caretakers}}</p>
+        <p>Sex: {{animal.sex}}</p>
+        <p>Likes: {{animal.likes}}</p>
+        <p>Dislikes: {{animal.dislikes}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="animal" *ngFor="let animal of childAnimalList | youngFilter">
+    <div *ngIf="search === 'young'">
+      <h3>{{animal.name}}</h3> <button type="button" name="button" (click)="editButtonClicked(animal)">Edit</button>
+      <div class="details">
+        <p>Name: {{animal.species}}</p>
+        <p>Age: {{animal.age}}</p>
+        <p>Diet: {{animal.diet}}</p>
+        <p>Location: {{animal.location}}</p>
+        <p>Number of Caretakers: {{animal.caretakers}}</p>
+        <p>Sex: {{animal.sex}}</p>
+        <p>Likes: {{animal.likes}}</p>
+        <p>Dislikes: {{animal.dislikes}}</p>
+      </div>
     </div>
   </div>
 </div>
