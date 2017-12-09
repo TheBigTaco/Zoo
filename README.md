@@ -1,8 +1,8 @@
-# Rename
+# Zoo
 ##### by Adam Titus
 
 ### Description
-
+An app to add animals to a zoo's database, with the ability to edit animals and filter which ones you see.
 
 ### Installation Instructions
 * Clone to desktop
@@ -17,7 +17,13 @@
 * Working browser with internet connection
 
 ### Known Bugs
+* Best viewed on a window sized at 887x467
 
+### Future Addition
+* Ability to sort by species
+* Ability to delete animals
+* Ability to add animal pictures
+* Ability to list caretakers, not just number them
 
 ### Contact Me
 You can reach me at adamtitus76@gmail.com or connect with me on [linkedin](www.linkedin.com/in/adam-titus-06740b149).
