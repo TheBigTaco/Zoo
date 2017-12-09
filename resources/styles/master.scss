@@ -4,18 +4,29 @@
 }
 .add-animal {
   border: 2px solid black;
-  width: 200px;
+  text-align: center;
+  padding: 2px;
+  height: 420px;
+  width: 175px;
   position: absolute;
   right: 40px;
-  top: 160px;
+  top: 182px;
+  button {
+    margin-top: 11px;
+  }
+  background-color: aqua;
 }
-
+.add-title {
+  margin: 0px;
+}
+//887x467
 .animal-list {
   display: flex;
   flex-direction: row;
-  width: 400px;
+  width: 600px;
   text-align: center;
   margin-left: 10px;
+  flex-wrap: wrap;
 }
 
 .animal {
@@ -23,6 +34,8 @@
   margin: 5px;
   padding: 2px;
   height: 420px;
+  width: 175px;
+  background-color: honeydew;
 }
 
 button {
@@ -32,6 +45,7 @@ button {
 .title {
   font-size: 50px;
   margin-top: 0px;
+  background-color: lightgrey;
 }
 
 .filter {
@@ -40,4 +54,25 @@ button {
 
 .search {
   margin-left: 300px;
+}
+
+body {
+  background-image: url("./../../resources/img/zoo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.edit-animal {
+  border: 2px solid black;
+  text-align: center;
+  padding: 2px;
+  height: 150px;
+  width: 175px;
+  position: absolute;
+  right: 40px;
+  top: 620px;
+  button {
+    margin-top: 11px;
+  }
+  background-color: aqua;
 }
